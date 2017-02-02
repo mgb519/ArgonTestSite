@@ -1,0 +1,28 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <head>
+    <title>Geo</title>
+      <script src="../resources/js/aframe.min.js"></script>
+    <script src="../resources/js/argon.min.js"></script>
+    <script src="../build.js"></script>
+    <script src="../resources/js/CSS3DArgonRenderer.js"></script>
+    <script src="../resources/js/CSS3DArgonHUD.js"></script>
+    <script src="../resources/js/aframe-look-at-component.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div hidden>
+      <div id="mydiv" class="boxface">Argon<br>+<br>AFrame</div>
+    </div>
+    <ar-scene>
+      <a-entity id="helloworld" position="0 0 -8">
+        <a-box position="0 0 0" rotation="0 45 0" width="1" 
+               height="1" depth="1"  color="#4CC3D9" ></a-box>
+        <a-entity position="0 1 0" rotation="0 45 0">
+            <a-entity css-object="div: #mydiv" scale="0.01 0.01 0.01" rotation="0 0 0" position="0 0 0">
+            </a-entity>
+        </a-entity>
+      </a-entity>
+    </ar-scene>    
+  </body>
+</html>
